@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="NutriLink redistributes surplus food by linking providers, beneficiaries, and delivery agents through one Flutter + Node platform." />
+  <title>NutriLink · Community Food Redistribution Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true"></div>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="logo" href="#home">
+        <img src="assets/logo.png" alt="NutriLink emblem" />
+        <span>NutriLink</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#roles">Use cases</a>
+        <a href="#impact">Impact</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#team">Developers</a>
+        <a href="#download">Download</a>
+      </nav>
+      <a class="btn btn--outline" href="#download">Get the App</a>
+      <button class="nav-toggle" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero__content" data-animate>
+          <p class="eyebrow">Community food redistribution</p>
+          <h1>Move surplus food to families in hours, not days.</h1>
+          <p class="lead">
+            NutriLink connects food providers, beneficiaries, delivery agents, and admins in one workflow so
+            surplus meals are listed, requested, delivered, and reported with accountability.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#download">Launch NutriLink</a>
+            <button class="btn btn--ghost" data-scroll-to="#impact">See the roadmap</button>
+          </div>
+          <ul class="stat-list">
+            <li>
+              <span class="stat">4</span>
+              <span class="label">User roles orchestrated</span>
+            </li>
+            <li>
+              <span class="stat">8-week</span>
+              <span class="label">End-to-end launch plan</span>
+            </li>
+            <li>
+              <span class="stat">SDG 2 + 12</span>
+              <span class="label">Direct impact focus</span>
+            </li>
+          </ul>
+        </div>
+        <div class="hero__visual" data-animate>
+          <div class="glow glow--top"></div>
+          <div class="device-frame">
+            <img src="assets/screenshots/hero-mock.jpg" alt="NutriLink dashboard preview" />
+          </div>
+          <div class="badge">
+            <p>Surplus alerts</p>
+            <span>Expiry-aware listings and nudges</span>
+          </div>
+          <div class="badge badge--secondary">
+            <p>Impact tracking</p>
+            <span>Meals delivered & waste saved</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="section__header" data-animate>
+          <p class="eyebrow">Why NutriLink</p>
+          <h2>Built for equitable food redistribution</h2>
+          <p>
+            From Flutter clients to Node + PostgresSQL services, every layer supports verified food providers,
+            transparent beneficiary requests, and measurable community impact.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card" data-animate>
+            <h3>Surplus listing + expiry guard</h3>
+            <p>
+              Providers specify quantity, pickup windows, and expiry; NutriLink auto-flags stale posts so
+              only safe food moves forward.
+            </p>
+          </article>
+          <article class="feature-card" data-animate>
+            <h3>Beneficiary discovery</h3>
+            <p>
+              Households browse nearby listings, filter by dietary need, and submit requests with status
+              tracking and notifications.
+            </p>
+          </article>
+          <article class="feature-card" data-animate>
+            <h3>Delivery orchestration</h3>
+            <p>
+              Delivery agents claim tasks, receive optimized pickup/drop details, and confirm completion for
+              admins and providers.
+            </p>
+          </article>
+          <article class="feature-card" data-animate>
+            <h3>Admin + impact analytics</h3>
+            <p>
+              Moderation tools, audit logs, and impact dashboards reveal meals delivered, waste diverted, and
+              community reach.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--roles" id="roles">
+        <div class="section__header" data-animate>
+          <p class="eyebrow">User journeys</p>
+          <h2>Every stakeholder has a guided flow</h2>
+          <p>
+            Prioritized user stories keep the MVP laser-focused on eliminating waste while creating dignity
+            for households that rely on timely deliveries.
+          </p>
+        </div>
+        <div class="role-grid">
+          <article class="role-card" data-animate>
+            <h3>Food providers</h3>
+            <p>
+              Restaurants, grocers, and caterers list surplus items, receive collection confirmations, and
+              monitor impact stats for CSR reporting.
+            </p>
+            <span>"I want to list surplus food so it doesn’t go to waste."</span>
+          </article>
+          <article class="role-card" data-animate>
+            <h3>Beneficiaries</h3>
+            <p>
+              Families discover nearby meals, request portions that match their needs, and follow delivery
+              status without app-hopping.
+            </p>
+            <span>"I want to see available food near me and track requests."</span>
+          </article>
+          <article class="role-card" data-animate>
+            <h3>Delivery agents</h3>
+            <p>
+              Couriers accept jobs, access maps and instructions, and log proof-of-delivery to earn incomes
+              while serving neighbors.
+            </p>
+            <span>"I want clear pickup and drop-off details for every run."</span>
+          </article>
+          <article class="role-card" data-animate>
+            <h3>Administrators</h3>
+            <p>
+              Moderators oversee listings, approve partners, and present real-time impact metrics to NGOs,
+              city partners, and the Hult Prize jury.
+            </p>
+            <span>"I want to monitor platform activity and impact data."</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--map" id="community-map">
+        <div class="section__header" data-animate>
+          <p class="eyebrow">Live visibility</p>
+          <h2>The community map keeps all four roles in sync</h2>
+          <p>
+            A shared map helps providers, beneficiaries, delivery agents, and admins coordinate pickups,
+            drop-offs, and outreach. Real-time filters spotlight who needs support and where surplus is
+            ready, so everyone can connect faster.
+          </p>
+        </div>
+        <div class="map-grid">
+          <figure class="map-card" data-animate>
+            <img src="assets/screenshots/community-map.jpg" alt="NutriLink community map connecting all roles" />
+            <figcaption>
+              Watch clusters of providers, beneficiaries, and delivery agents animate as new listings go
+              live. One tap recenters on the user’s current location for quick coordination.
+            </figcaption>
+          </figure>
+          <div class="map-insights" data-animate>
+            <h3>Why it matters</h3>
+            <ul>
+              <li>Surface nearby surplus before it expires</li>
+              <li>Match beneficiaries with the closest ready-to-collect meal</li>
+              <li>Guide delivery agents with live pickup and drop zones</li>
+              <li>Give admins proof of impact with spatial insights</li>
+            </ul>
+            <div class="map-pillars">
+              <span>Providers</span>
+              <span>Beneficiaries</span>
+              <span>Delivery</span>
+              <span>Admins</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--screens" id="screenshots">
+        <div class="section__header" data-animate>
+          <p class="eyebrow">App Gallery</p>
+          <h2>Preview the NutriLink journey</h2>
+          <p>
+            Showcase provider dashboards, beneficiary feeds, delivery runs, and admin oversight screens to
+            demonstrate the end-to-end redistribution chain.
+          </p>
+        </div>
+        <div class="screenshot-gallery">
+          <figure class="screenshot-card" data-animate>
+            <img src="assets/screenshots/screen1.jpg" alt="Food provider listing dashboard" />
+            <figcaption>
+              Providers add surplus food with expiry timers, quantity controls, and pickup guidance.
+            </figcaption>
+          </figure>
+          <figure class="screenshot-card" data-animate>
+            <img src="assets/screenshots/screen2.jpg" alt="Beneficiary request flow" />
+            <figcaption>
+              Beneficiaries browse nearby listings, request meals, and receive notifications instantly.
+            </figcaption>
+          </figure>
+          <figure class="screenshot-card" data-animate>
+            <img src="assets/screenshots/screen3.jpg" alt="Impact insights dashboard" />
+            <figcaption>
+              Admins monitor meals delivered, waste diverted, and delivery agent performance.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section--impact" id="impact">
+        <div class="section__header" data-animate>
+          <p class="eyebrow">Impact + roadmap</p>
+          <h2>Clear MVP priorities with measurable outcomes</h2>
+          <p>
+            NutriLink’s 8-week roadmap tackles authentication, food flows, notifications, and analytics
+            first—so pilots can report meals delivered, food waste reduced, and beneficiaries served.
+          </p>
+        </div>
+        <div class="impact-metrics" data-animate>
+          <div>
+            <span class="stat">Meals</span>
+            <p>Track every delivery, beneficiary, and provider contribution.</p>
+          </div>
+          <div>
+            <span class="stat">Waste ↓</span>
+            <p>Quantify kilograms of food saved from landfills per listing.</p>
+          </div>
+          <div>
+            <span class="stat">Reach</span>
+            <p>Report households served to partners, NGOs, and pitch judges.</p>
+          </div>
+        </div>
+        <div class="impact-grid">
+          <article class="impact-card" data-animate>
+            <h3>MVP must-haves</h3>
+            <ul>
+              <li>User authentication with role-based access</li>
+              <li>Food listing + request workflows</li>
+              <li>Delivery assignment + confirmations</li>
+              <li>Push notifications for critical events</li>
+            </ul>
+          </article>
+          <article class="impact-card" data-animate>
+            <h3>Should-haves</h3>
+            <ul>
+              <li>Impact analytics dashboard</li>
+              <li>Rating system for providers and agents</li>
+              <li>Location-aware filtering and routing</li>
+            </ul>
+          </article>
+          <article class="impact-card" data-animate>
+            <h3>Future bets</h3>
+            <ul>
+              <li>In-app messaging + offline mode</li>
+              <li>AI-based matching between supply and demand</li>
+              <li>Institutional dashboards + monetization layers</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--developer" id="team">
+        <div class="developer-card" data-animate>
+          <div class="developer-photos">
+            <figure>
+              <!-- Replace photo-lead.png with your mobile lead portrait inside website/assets/photo-lead.png -->
+              <img src="assets/photo-lead.png" alt="NutriLink mobile engineering lead portrait" />
+              <figcaption>
+                <span class="dev-name">Add lead name</span>
+                <small>Flutter & product direction</small>
+              </figcaption>
+            </figure>
+            <figure>
+              <!-- Replace photo-ops.png with your backend/logistics lead portrait inside website/assets/photo-ops.png -->
+              <img src="assets/photo-ops.png" alt="NutriLink backend and logistics lead portrait" />
+              <figcaption>
+                <span class="dev-name">Add ops name</span>
+                <small>Node.js, logistics & partnerships</small>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="developer-content">
+            <p class="eyebrow">Meet the creators</p>
+            <h2>Engineers, logisticians, and community advocates</h2>
+            <p>
+              We pair Flutter craftsmanship with Node.js, Express, PostgresSQL, and secure JWT auth to deliver a
+              reliable redistribution backbone for cities and NGOs.
+            </p>
+            <ul>
+              <li>Human-centered research with beneficiaries and providers</li>
+              <li>Rapid validation cycles ahead of Hult Prize milestones</li>
+              <li>Privacy-first infrastructure and transparent reporting</li>
+            </ul>
+            <a class="btn btn--secondary" href="mailto:kynmmarshall@gmail.com">Say hello</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--cta" id="download">
+        <div class="cta-card" data-animate>
+          <p class="eyebrow">Ready when you are</p>
+          <h2>Deploy NutriLink and reduce waste fast</h2>
+          <p>
+            Bundle the Flutter apps, Node backend, PostgresSQL database, and VPS deployment playbook to run a
+            community pilot or impress the Hult Prize jury with live metrics.
+          </p>
+          <div class="cta-actions">
+            <a class="btn btn--primary" href="nutrilink.apk">Download APK</a>
+            <a class="btn btn--ghost" href="#">View pitch deck</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> NutriLink. Fighting food waste with community tech.</p>
+      <a href="mailto:kynmmarshall@gmail.com">Contact us</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
