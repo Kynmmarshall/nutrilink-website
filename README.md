@@ -29,4 +29,4 @@ Open index.html in a browser. No build tools required.
 - The Download CTA points to nutrilink.apk; update as needed.
 
 ## Contact
-For questions or updates, email kynmmarshall@gmail.com.
+For questions or updates, email kynmmarshall@gmail.com
